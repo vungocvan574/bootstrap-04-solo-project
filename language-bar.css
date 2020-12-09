@@ -1,0 +1,6 @@
+.language-bar a,
+.language-bar p {
+    display: inline;
+    text-decoration: none;
+    color: #424242;
+}
