@@ -1,0 +1,9 @@
+.btn {
+    background-color: #b99470;
+    border-color: inherit;
+}
+
+.btn:hover {
+    background-color: #ad7b4c;
+    border-color: inherit;
+}
