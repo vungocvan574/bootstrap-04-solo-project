@@ -6,66 +6,66 @@ body {
     margin: 0;
 }
 
-.navbar-menu {
+.primary-menu {
     overflow: hidden;
-    background-color: white;
+    background-color: #333;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar-menu a {
+.primary-menu a {
     float: left;
     font-size: 16px;
-    color: #424242;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-.dropdown {
+.submenu {
     float: left;
     overflow: hidden;
 }
 
-.dropdown .dropbtn {
+.submenu .dropbtn {
     font-size: 16px;
     border: none;
     outline: none;
-    color: #424242;
+    color: white;
     padding: 14px 16px;
     background-color: inherit;
     font: inherit;
     margin: 0;
 }
 
-.navbar-menu a:hover,
-.dropdown:hover .dropbtn {
+.primary-menu a:hover,
+.submenu:hover .dropbtn {
     background-color: red;
 }
 
-.dropdown-content {
+.submenu-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     width: 100%;
-    /* left: 9%; */
+    left: 0;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
-.dropdown:hover .dropdown-content {
+.submenu-content .header {
+    background: red;
+    padding: 16px;
+    color: white;
+}
+
+.submenu:hover .submenu-content {
     display: block;
 }
 
 
-/* Create three equal columns that floats next to each other */
+/* Create three equal col-md-4s that floats next to each other */
 
-.col-sm-4 {
-    float: left;
-    background-color: #ccc;
-    height: 250px;
-}
-
-.column a {
+.col-md-4 a {
     float: none;
     color: black;
     padding: 16px;
@@ -74,12 +74,12 @@ body {
     text-align: left;
 }
 
-.column a:hover {
+.col-md-4 a:hover {
     background-color: #ddd;
 }
 
 
-/* Clear floats after the columns */
+/* Clear floats after the col-md-4s */
 
 .row:after {
     content: "";
